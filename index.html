@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./Assets/css/line-awesome.min.css">
     <link rel="stylesheet" href="./Assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/x-icon" href="./Assets/images/blossom.jpeg">
     
 />
 </head>
@@ -41,9 +42,6 @@
   </li>
   <li class="nav-item">
     <a class="nav-link" href="#work">Work</a>
-</li>
-<li class="nav-item">
-    <a class="nav-link" href="#reviews">Reviews</a>
 </li>
 <li class="nav-item">
     <a class="nav-link" href="#Contact">Contact</a>
@@ -100,7 +98,7 @@
           </div>
               <h4 class="mt-4 mb-2">Web Design</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-              <a href="#" class="link-custom">Read more</a>    
+              <a href="./links/design.html" class="link-custom">Read more</a>    
             </div>
         </div>
 
@@ -111,7 +109,7 @@
       </div>
           <h4 class="mt-4 mb-2">Static Web Service</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-          <a href="#" class="link-custom">Read more</a>    
+          <a href="./links/static.html" class="link-custom">Read more</a>    
         </div>
     </div>
       
@@ -120,9 +118,9 @@
         <div class="iconbox rounded-3">
           <i class="lab la-python"></i>
   </div>
-      <h4 class="mt-4 mb-2">Python Developement</h4>
+      <h4 class="mt-4 mb-2">Python Dev</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-      <a href="#" class="link-custom">Read more</a>    
+      <a href="./links/python.html" class="link-custom">Read more</a>    
     </div>
 </div>
     
@@ -185,45 +183,7 @@
             </div>
           </div>
         </div>
-
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="600" >
-          <div class="card-custom rounded-4 bg-base shadow-effect h-100">
-            <div class="card-custom-image rounded-4">
-              <img class="rounded-4" src="./Assets/images/Forms.jpg" alt="">
-            </div>
-            <div class="card-custom-content p-4">
-              <h4 class="mt-2" >HTML forms</h4>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, libero molestiae inventore perspiciatis aut explicabo. Odio cumque veritatis, culpa saepe adipisci ducimus quam ab voluptate voluptatem doloremque dolore temporibus dolorem!</p>
-              <a href="./links/livebio/index.html" class="link-custom mt-auto">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300" >
-          <div class="card-custom rounded-4 bg-base shadow- h-100">
-            <div class="card-custom-image rounded-4">
-              <img class="rounded-4" src="./Assets/images/project1.jpg" alt="">
-            </div>
-            <div class="card-custom-content p-4">
-              <h4 class="mt-2" >Rock Paper & Scissors Game</h4>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, libero molestiae inventore perspiciatis aut explicabo. Odio cumque veritatis, culpa saepe adipisci ducimus quam ab voluptate voluptatem doloremque dolore temporibus dolorem!</p>
-              <a href="#" class="link-custom mt-auto">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="600" >
-          <div class="card-custom rounded-4 bg-base shadow-effect h-100">
-            <div class="card-custom-image rounded-4">
-              <img class="rounded-4" src="./Assets/images/project1.jpg" alt="">
-            </div>
-            <div class="card-custom-content p-4">
-              <h4 class="mt-2">Rock Paper & Scissors Game</h4>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, libero molestiae inventore perspiciatis aut explicabo. Odio cumque veritatis, culpa saepe adipisci ducimus quam ab voluptate voluptatem doloremque dolore temporibus dolorem!</p>
-              <a href="#" class="link-custom mt-auto">Read More</a>
-            </div>
-          </div>
-        </div>
+           
 
         
       </div>
@@ -238,6 +198,14 @@
 
     <!-- <div class="row justify-content-center text-center" data-aos="fade-up">
       <div class="col-lg-8 pb-4"> -->
+        <div class="row pb-4" data-aos="fade-up">
+          <div class="col-lg-10">
+  
+            <h6 class="text-brand">Contact</h6>
+            <h1 class="pb-2">Interested? Let's Talk</h1>
+  
+          </div>
+        </div>
       <h1 class="contactMe">
       </h1>
     <div class="box">
@@ -279,7 +247,14 @@
 
           <div class="row100">
             <div class="inputBox">
-              <input type="submit" value="Send">
+              <input type="submit"  onclick="openPopup()" value="Send">
+
+              <div class="popup" id="popup">
+                <img src="./Assets/images/pinkcheck.jpeg" alt="">
+                <h2>Thank You!</h2>
+                <p>Your details has been successfully submitted.</p>
+                <button type="button" onclick="closePopup()">OK</button>
+              </div>
              
             </div>
           </div>
@@ -306,16 +281,25 @@
           </div>
 <!-- links -->
           <ul class="sci">
-            <li><a href="#"><i class="lab la-facebook"></i></a></li>
-            <li><a href="#"><i class="lab la-linkedin"></i></a></li>
-            <li><a href="#"><i class="lab la-facebook-messenger"></i></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100052966637494"><i class="lab la-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/ella-mae-paballa-a1601b251/"><i class="lab la-linkedin"></i></a></li>
+            <li><a href="https://www.messenger.com/t/100077389128307/"><i class="lab la-facebook-messenger"></i></a></li>
+            <li><a href="https://www.instagram.com/ella_chan006/?igshid=ZDdkNTZiNTM%3D"><i class="lab la-instagram"></i></a></li>
           </ul>
 
         </div>
       </div>
       
       <div class="contact map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62076.29325790327!2d123.32848479080381!3d13.48836828738796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a19742f96af201%3A0x2e72c636f035e064!2sBaao%2C%20Camarines%20Sur!5e0!3m2!1sen!2sph!4v1676634538899!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=
+        !1m18!1m12!1m3!1d62076.29325790327!2d123.32848479080381!
+        3d13.48836828738796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+        1!3m3!1m2!1s0x33a19742f96af201%3A0x2e72c636f035e064!2s
+        Baao%2C%20Camarines%20Sur!5e0!3m2!1sen!2sph!4v1676634538899!5m2!1sen!2sph" 
+         
+        style="border:0;" allowfullscreen=""
+         loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
 
     </div>
 
@@ -330,8 +314,17 @@
  <script src="./Assets/js/main.js"></script>
  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
     <script>
 AOS.init();
+
+let popup = document.getElementById("popup");
+function openPopup(){
+  popup.classList.add(".openPopup")
+}
+function closePopup(){
+  popup.classList.remove(".openPopup")
+}
     </script>
     
 </body>

@@ -16,3 +16,11 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+let popup = document.getElementById("popup");
+function openPopup(){
+  popup.classList.add(".open-Popup")
+}
+function closePopup(){
+  popup.classList.remove(".open-Popup")
+}

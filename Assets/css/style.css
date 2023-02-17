@@ -246,12 +246,54 @@ grid-area: map;
 
 .inputBox input[type="submit"] {
     background: #e724dd;
-    border: none;
-    font-size: 1.1em;
-    max-width: 120px;
+    border: 0;
+    font-size: 25px;
     font-weight: 500;
     cursor: pointer;
-    padding: 14px 15px;
+    border-radius: 30px;
+    padding: 10px 60px;
+}
+.popup{
+    width: 400px;
+    background: rgba(255, 192, 203, 0.849);
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%)scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color:black;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-Popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%)scale(1);
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px;
+}
+.popup h2{
+    font-size: 35px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background:#e724dd;
+    color: black;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4x;
+    cursor: pointer;
 }
 .info{
     background: #ffc0cbc4;
@@ -306,4 +348,30 @@ grid-area: map;
 
 .sci li a:hover {
     color:var(--color-brand);
+}
+
+.map {
+    padding: 0;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+
+}
+
+@media (max-width:991px) {
+    .contactMe {
+        padding: 20px;
+
+    }
+    .box {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "form"
+        "info"
+        "map";
+    }
 }
